@@ -60,7 +60,7 @@
             this.ImageBackground.Location = new System.Drawing.Point(0, 0);
             this.ImageBackground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ImageBackground.Name = "ImageBackground";
-            this.ImageBackground.Size = new System.Drawing.Size(526, 656);
+            this.ImageBackground.Size = new System.Drawing.Size(733, 728);
             this.ImageBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageBackground.TabIndex = 9;
             this.ImageBackground.TabStop = false;
@@ -69,10 +69,10 @@
             // 
             this.PanelMain.Controls.Add(this.PanelTabs);
             this.PanelMain.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelMain.Location = new System.Drawing.Point(526, 0);
+            this.PanelMain.Location = new System.Drawing.Point(733, 0);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(319, 656);
+            this.PanelMain.Size = new System.Drawing.Size(319, 728);
             this.PanelMain.TabIndex = 10;
             // 
             // PanelTabs
@@ -90,7 +90,7 @@
             this.PanelTabs.Name = "PanelTabs";
             this.PanelTabs.Padding = new System.Windows.Forms.Padding(8, 20, 8, 8);
             this.PanelTabs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PanelTabs.Size = new System.Drawing.Size(319, 656);
+            this.PanelTabs.Size = new System.Drawing.Size(319, 728);
             this.PanelTabs.TabIndex = 9;
             // 
             // LabelTitle
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 656);
+            this.ClientSize = new System.Drawing.Size(1052, 728);
             this.Controls.Add(this.ImageBackground);
             this.Controls.Add(this.PanelMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
