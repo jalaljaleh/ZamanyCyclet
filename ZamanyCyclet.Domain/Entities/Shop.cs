@@ -14,10 +14,14 @@ namespace ZamanyCyclet.Domain
         public string Name { get; set; }
         public string Code { get; set; }
 
-        public string Address { get; set; }
         public string PostalCode { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Address { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public string Description { get; set; }
 
         public virtual ICollection<ShopInventory> ShopInventories { get; set; }
     }

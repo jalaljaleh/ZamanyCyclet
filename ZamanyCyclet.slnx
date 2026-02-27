@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="ZamanyCyclet.App/ZamanyCyclet.App.csproj" Id="2ac7be95-74d4-4170-969c-3635ebcfbbf5" />
+  <Project Path="ZamanyCyclet.Common/ZamanyCyclet.Common.csproj" Id="7f924b57-a57c-4e61-9bbc-3082d24bf53c" />
   <Project Path="ZamanyCyclet.Console/ZamanyCyclet.Console.csproj" Id="5941aee2-6043-4a52-aefb-abf863280dee" />
   <Project Path="ZamanyCyclet.Domain/ZamanyCyclet.Domain.csproj" Id="6b7ceb4b-e03a-4882-9b1e-03e8d06bd5c4" />
   <Project Path="ZamanyCyclet.Infrastructure/ZamanyCyclet.Infrastructure.csproj" Id="f637ac83-2606-4030-91d1-e5b0caf0fb93" />

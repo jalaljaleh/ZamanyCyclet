@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CreateProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateProductForm.Designer.cs">
+      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CreateShopForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CreateProductForm.resx">
+      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateShopForm.resx">
       <DependentUpon>CreateShopForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +146,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ZamanyCyclet.Common\ZamanyCyclet.Common.csproj">
+      <Project>{7f924b57-a57c-4e61-9bbc-3082d24bf53c}</Project>
+      <Name>ZamanyCyclet.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZamanyCyclet.Domain\ZamanyCyclet.Domain.csproj">
       <Project>{6b7ceb4b-e03a-4882-9b1e-03e8d06bd5c4}</Project>
       <Name>ZamanyCyclet.Domain</Name>
@@ -149,6 +162,10 @@
   <ItemGroup>
     <Content Include="Resources\128.ico" />
     <Content Include="Resources\256.ico" />
+    <None Include="Resources\box_320px.png" />
+    <None Include="Resources\production_finished_320px.png" />
+    <None Include="Resources\edit_80px.png" />
+    <None Include="Resources\add_new_80px.png" />
     <None Include="Resources\background1.jpg" />
     <None Include="Resources\brake_pad_warning_80px.png" />
     <None Include="Resources\homework_80px.png" />

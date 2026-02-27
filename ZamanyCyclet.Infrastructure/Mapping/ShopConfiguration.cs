@@ -28,8 +28,14 @@ namespace ZamanyCyclet.Infrastructure.Mapping
             Property(x => x.Address)
                 .HasMaxLength(500);
 
+            Property(x => x.Description)
+               .HasMaxLength(200);
+
             Property(x => x.PostalCode)
                 .HasMaxLength(20);
+
+            Property(x => x.PhoneNumber)
+               .HasMaxLength(40);
 
             Property(x => x.CreatedAt)
                 .IsRequired();

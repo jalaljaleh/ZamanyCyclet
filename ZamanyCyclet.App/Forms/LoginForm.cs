@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZamanyCyclet.App.Helpers;
+using ZamanyCyclet.Common;
 using ZamanyCyclet.Domain;
 using ZamanyCyclet.Infrastructure;
 
@@ -19,6 +20,7 @@ namespace ZamanyCyclet.App.Forms
 
             this.Shown += LoginForm_Shown;
             this.btnLogin.Click += BtnLogin_Click;
+            this.btnLogin.KeyDown += (s, e) => { if (e.KeyData == Keys.Enter) BtnLogin_Click(s, e); };
         }
 
         private async void LoginForm_Shown(object sender, EventArgs e)
@@ -37,6 +39,8 @@ namespace ZamanyCyclet.App.Forms
 
         private void InitializeUi()
         {
+            this.btnLogin.Focus();
+
             LabelDatetime.Text = PersianDateHelper.GetTodayLongDate();
             labelVersion.Text = Program.Version;
         }
@@ -52,38 +56,9 @@ namespace ZamanyCyclet.App.Forms
                 {
                     db.Database.Create();
 
-                    db.Users.Add(new User
-                    {
-                        Username = "Developer",
-                        DisplayName = "توسعه دهنده",
-                        Password = "654321",
-                        CreatedAt = DateTime.Now,
-                        Permissions = UserPermissions.None
-                    });
-                    db.Users.Add(new User
-                    {
-                        Username = "ArasZamany",
-                        DisplayName = "آراس زمانی",
-                        Password = "654321",
-                        CreatedAt = DateTime.Now,
-                        Permissions = UserPermissions.None
-                    });
+                    db.Users.Add(UsersHelper.GetDeveloperUser());
+                    db.ProductUnit.AddRange(ProductUnitsHelper.GetProductUnits());
 
-                    db.Shops.Add(new Shop()
-                    {
-                        Name = "سیروس",
-                        Code = "CYR",
-                        Address = "خیابان سیروس",
-                        
-                    });
-
-                    db.Shops.Add(new Shop()
-                    {
-                        Name = "دوشان",
-                        Code = "CYR1",
-                        Address = "خیابان سیروس",
-
-                    });
                     db.SaveChanges();
                 }
 

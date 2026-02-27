@@ -58,7 +58,7 @@
             this.ImageBackground.Location = new System.Drawing.Point(0, 0);
             this.ImageBackground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ImageBackground.Name = "ImageBackground";
-            this.ImageBackground.Size = new System.Drawing.Size(536, 728);
+            this.ImageBackground.Size = new System.Drawing.Size(538, 728);
             this.ImageBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageBackground.TabIndex = 9;
             this.ImageBackground.TabStop = false;
@@ -68,15 +68,15 @@
             this.PanelMain.Controls.Add(this.PanelTabs);
             this.PanelMain.Controls.Add(this.LabelCopyright);
             this.PanelMain.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelMain.Location = new System.Drawing.Point(536, 0);
+            this.PanelMain.Location = new System.Drawing.Point(538, 0);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(319, 728);
+            this.PanelMain.Size = new System.Drawing.Size(399, 728);
             this.PanelMain.TabIndex = 10;
             // 
             // PanelTabs
             // 
-            this.PanelTabs.BackColor = System.Drawing.SystemColors.Control;
+            this.PanelTabs.BackColor = System.Drawing.Color.Transparent;
             this.PanelTabs.Controls.Add(this.LabelTitle);
             this.PanelTabs.Controls.Add(this.LabelTittleDescription);
             this.PanelTabs.Controls.Add(this.LabelDatetime);
@@ -85,40 +85,40 @@
             this.PanelTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTabs.Location = new System.Drawing.Point(0, 0);
             this.PanelTabs.Name = "PanelTabs";
-            this.PanelTabs.Padding = new System.Windows.Forms.Padding(8, 20, 8, 8);
+            this.PanelTabs.Padding = new System.Windows.Forms.Padding(20);
             this.PanelTabs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PanelTabs.Size = new System.Drawing.Size(319, 667);
+            this.PanelTabs.Size = new System.Drawing.Size(399, 667);
             this.PanelTabs.TabIndex = 9;
             // 
             // LabelTitle
             // 
             this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTitle.Location = new System.Drawing.Point(93, 20);
+            this.LabelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.Location = new System.Drawing.Point(114, 20);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(207, 21);
+            this.LabelTitle.Size = new System.Drawing.Size(242, 25);
             this.LabelTitle.TabIndex = 2;
             this.LabelTitle.Text = "سیستم حسابداری زمانی‌سیکلت";
             // 
             // LabelTittleDescription
             // 
             this.LabelTittleDescription.AutoSize = true;
-            this.LabelTittleDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTittleDescription.Location = new System.Drawing.Point(51, 51);
+            this.LabelTittleDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTittleDescription.Location = new System.Drawing.Point(53, 55);
             this.LabelTittleDescription.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.LabelTittleDescription.Name = "LabelTittleDescription";
             this.LabelTittleDescription.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelTittleDescription.Size = new System.Drawing.Size(249, 15);
+            this.LabelTittleDescription.Size = new System.Drawing.Size(303, 19);
             this.LabelTittleDescription.TabIndex = 4;
             this.LabelTittleDescription.Text = "به نرم افزار حساب داری زمانی‌سیکلت خوش آمدید !";
             // 
             // LabelDatetime
             // 
-            this.LabelDatetime.AutoSize = true;
-            this.LabelDatetime.Location = new System.Drawing.Point(226, 76);
-            this.LabelDatetime.Margin = new System.Windows.Forms.Padding(10);
+            this.LabelDatetime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDatetime.Location = new System.Drawing.Point(63, 89);
+            this.LabelDatetime.Margin = new System.Windows.Forms.Padding(10, 15, 10, 10);
             this.LabelDatetime.Name = "LabelDatetime";
-            this.LabelDatetime.Size = new System.Drawing.Size(67, 15);
+            this.LabelDatetime.Size = new System.Drawing.Size(286, 26);
             this.LabelDatetime.TabIndex = 6;
             this.LabelDatetime.Text = "[تاریخ امروز]";
             // 
@@ -129,10 +129,10 @@
             this.GroupBoxLogin.Controls.Add(this.CbUsers);
             this.GroupBoxLogin.Controls.Add(this.InputPassword);
             this.GroupBoxLogin.Controls.Add(this.label1);
-            this.GroupBoxLogin.Location = new System.Drawing.Point(9, 106);
+            this.GroupBoxLogin.Location = new System.Drawing.Point(53, 130);
             this.GroupBoxLogin.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.GroupBoxLogin.Name = "GroupBoxLogin";
-            this.GroupBoxLogin.Size = new System.Drawing.Size(291, 231);
+            this.GroupBoxLogin.Size = new System.Drawing.Size(303, 231);
             this.GroupBoxLogin.TabIndex = 5;
             this.GroupBoxLogin.TabStop = false;
             this.GroupBoxLogin.Text = "ورود";
@@ -176,6 +176,7 @@
             this.InputPassword.PasswordChar = '*';
             this.InputPassword.Size = new System.Drawing.Size(242, 23);
             this.InputPassword.TabIndex = 0;
+            this.InputPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.InputPassword.WordWrap = false;
             // 
             // label1
@@ -190,12 +191,11 @@
             // 
             // labelVersion
             // 
-            this.labelVersion.AutoSize = true;
             this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(251, 350);
+            this.labelVersion.Location = new System.Drawing.Point(64, 374);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(10);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(42, 15);
+            this.labelVersion.Size = new System.Drawing.Size(285, 29);
             this.labelVersion.TabIndex = 10;
             this.labelVersion.Text = "[نسخه]";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,7 +208,7 @@
             this.LabelCopyright.Name = "LabelCopyright";
             this.LabelCopyright.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.LabelCopyright.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelCopyright.Size = new System.Drawing.Size(319, 35);
+            this.LabelCopyright.Size = new System.Drawing.Size(399, 35);
             this.LabelCopyright.TabIndex = 7;
             this.LabelCopyright.Text = "طراحی و توسعه شرکت خدمات نرم افزاری Haluntm";
             this.LabelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,7 +217,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 728);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(937, 728);
             this.Controls.Add(this.ImageBackground);
             this.Controls.Add(this.PanelMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

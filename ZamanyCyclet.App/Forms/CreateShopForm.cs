@@ -34,6 +34,9 @@ namespace ZamanyCyclet.App.Forms
                 InputCode.Text = _shop.Code;
                 InputAddress.Text = _shop.Address;
                 InputPostalCode.Text = _shop.PostalCode;
+                InputPhoneNumber.Text = _shop.PhoneNumber;
+                InputDescription.Text = _shop.Description;
+                InputUpdatedAt.Text = PersianDateHelper.ToShortDate(_shop.UpdatedAt);
 
                 InputCode.Enabled = false;
                 this.Text = "ویرایش شعبه " + _shop.Name;
@@ -73,6 +76,16 @@ namespace ZamanyCyclet.App.Forms
                     shopInDb.Name = InputName.Text.Trim();
                     shopInDb.Address = InputAddress.Text.Trim();
                     shopInDb.PostalCode = InputPostalCode.Text.Trim();
+                    shopInDb.PhoneNumber = InputPhoneNumber.Text.Trim();
+                    shopInDb.Description = InputDescription.Text;
+                    shopInDb.UpdatedAt = DateTime.Now;
+
+                    var isValid = IsValid(shopInDb);
+                    if (isValid.result is false)
+                    {
+                        MessageBox.Show(isValid.error);
+                        return;
+                    }
                 }
                 else
                 {
@@ -87,7 +100,16 @@ namespace ZamanyCyclet.App.Forms
                     _shop.Address = InputAddress.Text.Trim();
                     _shop.PostalCode = InputPostalCode.Text.Trim();
                     _shop.CreatedAt = DateTime.Now;
+                    _shop.PhoneNumber = InputPhoneNumber.Text.Trim();
+                    _shop.Description = InputDescription.Text.Trim();
+                    _shop.UpdatedAt = DateTime.Now;
 
+                    var isValid = IsValid(_shop);
+                    if (isValid.result is false)
+                    {
+                        MessageBox.Show(isValid.error);
+                        return;
+                    }
                     db.Shops.Add(_shop);
                 }
 
@@ -97,7 +119,13 @@ namespace ZamanyCyclet.App.Forms
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+        (bool result, string error) IsValid(Shop shop)
+        {
+            if (shop.Name.Length < 3) return (false, "نام فروشگاه بسیار کوتاه است.");
+            if (shop.Code.Length < 3) return (false, "کد شعبه بسیار کوتاه است.");
 
+            return (true, "");
+        }
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

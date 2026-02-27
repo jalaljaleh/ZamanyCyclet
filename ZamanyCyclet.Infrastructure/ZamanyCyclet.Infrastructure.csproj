@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HalunDbContext.cs" />
+    <Compile Include="Mapping\ProductUnitConfiguration.cs" />
     <Compile Include="Mapping\ProductConfiguration.cs" />
     <Compile Include="Mapping\ShopConfiguration.cs" />
     <Compile Include="Mapping\ShopInventoryConfiguration.cs" />

@@ -58,7 +58,7 @@ namespace ZamanyCyclet.App.Pages
         {
             bool isEnabled = SelectedRow != null;
 
-            toolBtnDeleteShop.Enabled = isEnabled;
+            //toolBtnDeleteShop.Enabled = isEnabled;
             toolBtnEditShop.Enabled = isEnabled;
         }
     }

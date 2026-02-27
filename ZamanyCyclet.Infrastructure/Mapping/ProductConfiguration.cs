@@ -25,14 +25,15 @@ namespace ZamanyCyclet.Infrastructure.Mapping
                 .IsRequired()
                 .HasMaxLength(50);
 
+            HasIndex(x => x.Code)
+                .IsUnique()
+                .HasName("IX_Product_Code");
+
             Property(x => x.Brand)
                 .HasMaxLength(100);
 
             Property(x => x.Category)
                 .HasMaxLength(100);
-
-            Property(x => x.Unit)
-                .HasMaxLength(20);
 
             Property(x => x.PurchasePrice)
                 .HasPrecision(18, 2);
@@ -46,6 +47,12 @@ namespace ZamanyCyclet.Infrastructure.Mapping
             HasMany(x => x.ShopInventories)
                 .WithRequired(x => x.Product)
                 .HasForeignKey(x => x.ProductId);
+
+
+            HasRequired(x => x.Unit) 
+                .WithMany(u => u.Products) 
+                .HasForeignKey(x => x.UnitId) 
+                .WillCascadeOnDelete(false); 
         }
     }
 }

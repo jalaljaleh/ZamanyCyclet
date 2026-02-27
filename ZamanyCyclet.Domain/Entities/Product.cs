@@ -12,15 +12,24 @@ namespace ZamanyCyclet.Domain
 
         public string Name { get; set; }
         public string Code { get; set; }
+        public string Description { get; set; }
         public string Brand { get; set; }
         public string Category { get; set; }
 
         public decimal PurchasePrice { get; set; }
         public decimal SalePrice { get; set; }
 
-        public string Unit { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+        public int UnitId { get; set; }
+        public virtual ProductUnit Unit { get; set; }
 
         public virtual ICollection<ShopInventory> ShopInventories { get; set; }
+
+
+
+
+     
     }
 }

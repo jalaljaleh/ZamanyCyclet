@@ -23,12 +23,15 @@ namespace ZamanyCyclet.Infrastructure
         public DbSet<User> Users { get; set; }
         public DbSet<Shop> Shops { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductUnit> ProductUnit { get; set; }
         public DbSet<ShopInventory> ShopInventories { get; set; }
+      
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CustomerConfiguration());
             modelBuilder.Configurations.Add(new ProductConfiguration());
+            modelBuilder.Configurations.Add(new ProductUnitConfiguration());
             modelBuilder.Configurations.Add(new ShopConfiguration());
             modelBuilder.Configurations.Add(new ShopInventoryConfiguration());
 

@@ -46,26 +46,26 @@ namespace ZamanyCyclet.App.Forms
         }
         void AddShops()
         {
-            using (HalunDbContext db = new HalunDbContext())
-            {
-                var shops = db.Shops.ToList();
-                foreach (var shop in shops)
-                {
-                    var menuItem = new ToolStripMenuItem(shop.Name);
-                    //menuItem.AutoSize = false;
-                    menuItem.Image = Properties.Resources.motorbike_helmet80x;
-                    menuItem.Name = $"toolshop:{shop.Id}";
-                    menuItem.Size = new System.Drawing.Size(80, 90);
-                    menuItem.Text = shop.Name;
-                    menuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            //using (HalunDbContext db = new HalunDbContext())
+            //{
+            //    var shops = db.Shops.ToList();
+            //    foreach (var shop in shops)
+            //    {
+            //        var menuItem = new ToolStripMenuItem(shop.Name);
+            //        //menuItem.AutoSize = false;
+            //        menuItem.Image = Properties.Resources.motorbike_helmet80x;
+            //        menuItem.Name = $"toolshop:{shop.Id}";
+            //        menuItem.Size = new System.Drawing.Size(80, 90);
+            //        menuItem.Text = shop.Name;
+            //        menuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 
-                    menuItem.Click += (s, e) =>
-                    {
+            //        menuItem.Click += (s, e) =>
+            //        {
 
-                    };
-                    toolShops.Items.Add(menuItem);
-                }
-            }
+            //        };
+            //        toolShops.Items.Add(menuItem);
+            //    }
+            //}
         }
 
 

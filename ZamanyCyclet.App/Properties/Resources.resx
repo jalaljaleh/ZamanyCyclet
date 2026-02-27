@@ -118,43 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="brake_pad_warning_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brake_pad_warning_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homework_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homework_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="museum_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\museum_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checked_user_male_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checked_user_male_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="estimate_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\estimate_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_new_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_new_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exterior_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exterior_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="home_automation_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_automation_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="product_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\product_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ball_point_pen_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ball_point_pen_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="estimate_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estimate_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="motorbike_helmet80x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\motorbike_helmet80x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homework_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homework_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="production_finished_320px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\production_finished_320px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="product_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checked_user_male_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked_user_male_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="museum_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\museum_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brake_pad_warning_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brake_pad_warning_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="open_box_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open_box_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ball_point_pen_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ball_point_pen_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_320px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_320px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

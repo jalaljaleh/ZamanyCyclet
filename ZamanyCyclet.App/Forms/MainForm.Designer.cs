@@ -34,22 +34,20 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolShops = new System.Windows.Forms.ToolStrip();
-            this.panelView = new System.Windows.Forms.Panel();
-            this.menu_BtnShopManage = new System.Windows.Forms.ToolStripButton();
             this.toolUser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolBuy = new System.Windows.Forms.ToolStripButton();
             this.menu_BtnShopInventory = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.panelView = new System.Windows.Forms.Panel();
+            this.menu_BtnShopManage = new System.Windows.Forms.ToolStripButton();
             this.MenuMain.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.toolShops.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuMain
             // 
-            this.MenuMain.BackColor = System.Drawing.Color.Transparent;
+            this.MenuMain.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MenuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -89,7 +87,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(80, 80);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -97,7 +95,8 @@
             this.toolStripSeparator1,
             this.toolBuy,
             this.menu_BtnShopInventory,
-            this.toolStripSeparator2});
+            this.toolStripSeparator2,
+            this.menu_BtnShopManage});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
@@ -107,40 +106,55 @@
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolUser
+            // 
+            this.toolUser.AutoSize = false;
+            this.toolUser.Image = global::ZamanyCyclet.App.Properties.Resources.checked_user_male_80px;
+            this.toolUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolUser.Name = "toolUser";
+            this.toolUser.Size = new System.Drawing.Size(80, 90);
+            this.toolUser.Text = "[کاربر]";
+            this.toolUser.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 93);
+            // 
+            // toolBuy
+            // 
+            this.toolBuy.AutoSize = false;
+            this.toolBuy.Image = global::ZamanyCyclet.App.Properties.Resources.estimate_80px;
+            this.toolBuy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolBuy.Name = "toolBuy";
+            this.toolBuy.Size = new System.Drawing.Size(80, 90);
+            this.toolBuy.Text = "خرید";
+            this.toolBuy.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menu_BtnShopInventory
+            // 
+            this.menu_BtnShopInventory.AutoSize = false;
+            this.menu_BtnShopInventory.Image = global::ZamanyCyclet.App.Properties.Resources.open_box_80px;
+            this.menu_BtnShopInventory.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.menu_BtnShopInventory.Name = "menu_BtnShopInventory";
+            this.menu_BtnShopInventory.Size = new System.Drawing.Size(80, 90);
+            this.menu_BtnShopInventory.Text = "انبار";
+            this.menu_BtnShopInventory.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.menu_BtnShopInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 93);
             // 
-            // toolShops
-            // 
-            this.toolShops.BackColor = System.Drawing.Color.Transparent;
-            this.toolShops.Dock = System.Windows.Forms.DockStyle.Right;
-            this.toolShops.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolShops.ImageScalingSize = new System.Drawing.Size(60, 60);
-            this.toolShops.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu_BtnShopManage});
-            this.toolShops.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.toolShops.Location = new System.Drawing.Point(1344, 127);
-            this.toolShops.Name = "toolShops";
-            this.toolShops.Padding = new System.Windows.Forms.Padding(0);
-            this.toolShops.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolShops.Size = new System.Drawing.Size(80, 671);
-            this.toolShops.TabIndex = 5;
-            this.toolShops.Text = "toolStrip2";
-            // 
             // panelView
             // 
-            this.panelView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelView.Location = new System.Drawing.Point(0, 127);
             this.panelView.Name = "panelView";
-            this.panelView.Size = new System.Drawing.Size(1344, 671);
+            this.panelView.Size = new System.Drawing.Size(1424, 671);
             this.panelView.TabIndex = 6;
             // 
             // menu_BtnShopManage
@@ -156,46 +170,13 @@
             this.menu_BtnShopManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menu_BtnShopManage.ToolTipText = "مدیریت\r\n شعبه ها";
             // 
-            // toolUser
-            // 
-            this.toolUser.AutoSize = false;
-            this.toolUser.Image = global::ZamanyCyclet.App.Properties.Resources.checked_user_male_80px;
-            this.toolUser.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolUser.Name = "toolUser";
-            this.toolUser.Size = new System.Drawing.Size(80, 90);
-            this.toolUser.Text = "[کاربر]";
-            this.toolUser.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.toolUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolBuy
-            // 
-            this.toolBuy.AutoSize = false;
-            this.toolBuy.Image = global::ZamanyCyclet.App.Properties.Resources.estimate_80px;
-            this.toolBuy.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBuy.Name = "toolBuy";
-            this.toolBuy.Size = new System.Drawing.Size(80, 90);
-            this.toolBuy.Text = "خرید";
-            this.toolBuy.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.toolBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolBtnShopInventory
-            // 
-            this.menu_BtnShopInventory.AutoSize = false;
-            this.menu_BtnShopInventory.Image = global::ZamanyCyclet.App.Properties.Resources.open_box_80px;
-            this.menu_BtnShopInventory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menu_BtnShopInventory.Name = "toolBtnShopInventory";
-            this.menu_BtnShopInventory.Size = new System.Drawing.Size(80, 90);
-            this.menu_BtnShopInventory.Text = "انبار";
-            this.menu_BtnShopInventory.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.menu_BtnShopInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1424, 798);
             this.Controls.Add(this.panelView);
-            this.Controls.Add(this.toolShops);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.MenuMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,8 +193,6 @@
             this.MenuMain.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.toolShops.ResumeLayout(false);
-            this.toolShops.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,8 +210,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton menu_BtnShopInventory;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStrip toolShops;
-        private System.Windows.Forms.ToolStripButton menu_BtnShopManage;
         private System.Windows.Forms.Panel panelView;
+        private System.Windows.Forms.ToolStripButton menu_BtnShopManage;
     }
 }
