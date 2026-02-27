@@ -90,7 +90,7 @@
             // 
             // InputPostalCode
             // 
-            this.InputPostalCode.BackColor = System.Drawing.SystemColors.Info;
+            this.InputPostalCode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.InputPostalCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InputPostalCode.Location = new System.Drawing.Point(313, 324);
             this.InputPostalCode.Name = "InputPostalCode";
@@ -183,7 +183,7 @@
             // 
             // InputName
             // 
-            this.InputName.BackColor = System.Drawing.Color.Khaki;
+            this.InputName.BackColor = System.Drawing.Color.Lavender;
             this.InputName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InputName.Location = new System.Drawing.Point(255, 169);
             this.InputName.Name = "InputName";
@@ -211,7 +211,7 @@
             // 
             // InputCode
             // 
-            this.InputCode.BackColor = System.Drawing.Color.MistyRose;
+            this.InputCode.BackColor = System.Drawing.Color.OldLace;
             this.InputCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InputCode.Location = new System.Drawing.Point(327, 88);
             this.InputCode.Name = "InputCode";

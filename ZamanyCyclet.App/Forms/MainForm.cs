@@ -27,6 +27,7 @@ namespace ZamanyCyclet.App.Forms
             InitilizeUi();
 
             menu_BtnShopManage.Click += (s,e)=> { ShowPage(new ShopManagerPage()); };
+            menu_BtnShopInventory.Click += (s,e)=> { ShowPage(new InventoryManagerPage()); };
         }
 
         private void ShowPage(UserControl page)

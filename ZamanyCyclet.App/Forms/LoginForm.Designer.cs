@@ -94,23 +94,23 @@
             // 
             this.LabelTitle.AutoSize = true;
             this.LabelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTitle.Location = new System.Drawing.Point(97, 20);
+            this.LabelTitle.Location = new System.Drawing.Point(93, 20);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(203, 21);
+            this.LabelTitle.Size = new System.Drawing.Size(207, 21);
             this.LabelTitle.TabIndex = 2;
-            this.LabelTitle.Text = "سیستم حسابداری آراس‌سیکلت";
+            this.LabelTitle.Text = "سیستم حسابداری زمانی‌سیکلت";
             // 
             // LabelTittleDescription
             // 
             this.LabelTittleDescription.AutoSize = true;
             this.LabelTittleDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTittleDescription.Location = new System.Drawing.Point(55, 51);
+            this.LabelTittleDescription.Location = new System.Drawing.Point(51, 51);
             this.LabelTittleDescription.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.LabelTittleDescription.Name = "LabelTittleDescription";
             this.LabelTittleDescription.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelTittleDescription.Size = new System.Drawing.Size(245, 15);
+            this.LabelTittleDescription.Size = new System.Drawing.Size(249, 15);
             this.LabelTittleDescription.TabIndex = 4;
-            this.LabelTittleDescription.Text = "به نرم افزار حساب داری آراس‌سیکلت خوش آمدید !";
+            this.LabelTittleDescription.Text = "به نرم افزار حساب داری زمانی‌سیکلت خوش آمدید !";
             // 
             // LabelDatetime
             // 

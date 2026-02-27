@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Helpers\SystemTimeHelper.cs" />
     <Compile Include="Helpers\PersianDateHelper.cs" />
+    <Compile Include="Pages\InventoryManagerPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\InventoryManagerPage.Designer.cs">
+      <DependentUpon>InventoryManagerPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShopManagerPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\InventoryManagerPage.resx">
+      <DependentUpon>InventoryManagerPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ShopManagerPage.resx">
       <DependentUpon>ShopManagerPage.cs</DependentUpon>

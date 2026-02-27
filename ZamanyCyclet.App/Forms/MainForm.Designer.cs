@@ -41,7 +41,7 @@
             this.menu_BtnShopManage = new System.Windows.Forms.ToolStripButton();
             this.toolUser = new System.Windows.Forms.ToolStripButton();
             this.toolBuy = new System.Windows.Forms.ToolStripButton();
-            this.toolBtnShopInventory = new System.Windows.Forms.ToolStripButton();
+            this.menu_BtnShopInventory = new System.Windows.Forms.ToolStripButton();
             this.MenuMain.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.toolShops.SuspendLayout();
@@ -96,7 +96,7 @@
             this.toolUser,
             this.toolStripSeparator1,
             this.toolBuy,
-            this.toolBtnShopInventory,
+            this.menu_BtnShopInventory,
             this.toolStripSeparator2});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
@@ -180,14 +180,14 @@
             // 
             // toolBtnShopInventory
             // 
-            this.toolBtnShopInventory.AutoSize = false;
-            this.toolBtnShopInventory.Image = global::ZamanyCyclet.App.Properties.Resources.open_box_80px;
-            this.toolBtnShopInventory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBtnShopInventory.Name = "toolBtnShopInventory";
-            this.toolBtnShopInventory.Size = new System.Drawing.Size(80, 90);
-            this.toolBtnShopInventory.Text = "انبار";
-            this.toolBtnShopInventory.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.toolBtnShopInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menu_BtnShopInventory.AutoSize = false;
+            this.menu_BtnShopInventory.Image = global::ZamanyCyclet.App.Properties.Resources.open_box_80px;
+            this.menu_BtnShopInventory.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.menu_BtnShopInventory.Name = "toolBtnShopInventory";
+            this.menu_BtnShopInventory.Size = new System.Drawing.Size(80, 90);
+            this.menu_BtnShopInventory.Text = "انبار";
+            this.menu_BtnShopInventory.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.menu_BtnShopInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // MainForm
             // 
@@ -229,7 +229,7 @@
         private System.Windows.Forms.ToolStripButton toolBuy;
         private System.Windows.Forms.ToolStripButton toolUser;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolBtnShopInventory;
+        private System.Windows.Forms.ToolStripButton menu_BtnShopInventory;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStrip toolShops;
         private System.Windows.Forms.ToolStripButton menu_BtnShopManage;
