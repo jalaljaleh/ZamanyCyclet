@@ -22,7 +22,7 @@ namespace ZamanyCyclet.App
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
-        public const string Version = "1.0.0v-alpha";
+        public const string Version = "ویرایش بتا نسخه 1.0.0.1";
         public static bool IsDebugMode() => System.Diagnostics.Debugger.IsAttached;
        
     }

@@ -73,9 +73,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background_banner {
+        internal static System.Drawing.Bitmap ball_point_pen_80px {
             get {
-                object obj = ResourceManager.GetObject("background_banner", resourceCulture);
+                object obj = ResourceManager.GetObject("ball_point_pen_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap banner {
+        internal static System.Drawing.Bitmap brake_pad_warning_80px {
             get {
-                object obj = ResourceManager.GetObject("banner", resourceCulture);
+                object obj = ResourceManager.GetObject("brake_pad_warning_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap motorbike_helmet {
+        internal static System.Drawing.Bitmap cancel_80px {
             get {
-                object obj = ResourceManager.GetObject("motorbike_helmet", resourceCulture);
+                object obj = ResourceManager.GetObject("cancel_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pos {
+        internal static System.Drawing.Bitmap checked_user_male_80px {
             get {
-                object obj = ResourceManager.GetObject("pos", resourceCulture);
+                object obj = ResourceManager.GetObject("checked_user_male_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap product {
+        internal static System.Drawing.Bitmap estimate_80px {
             get {
-                object obj = ResourceManager.GetObject("product", resourceCulture);
+                object obj = ResourceManager.GetObject("estimate_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap settings {
+        internal static System.Drawing.Bitmap exterior_80px {
             get {
-                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                object obj = ResourceManager.GetObject("exterior_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tools {
+        internal static System.Drawing.Bitmap home_automation_80px {
             get {
-                object obj = ResourceManager.GetObject("tools", resourceCulture);
+                object obj = ResourceManager.GetObject("home_automation_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,49 @@ namespace ZamanyCyclet.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap user {
+        internal static System.Drawing.Bitmap homework_80px {
             get {
-                object obj = ResourceManager.GetObject("user", resourceCulture);
+                object obj = ResourceManager.GetObject("homework_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap motorbike_helmet80x {
+            get {
+                object obj = ResourceManager.GetObject("motorbike_helmet80x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap museum_80px {
+            get {
+                object obj = ResourceManager.GetObject("museum_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_box_80px {
+            get {
+                object obj = ResourceManager.GetObject("open_box_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_80px {
+            get {
+                object obj = ResourceManager.GetObject("product_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -112,6 +112,5 @@ namespace ZamanyCyclet.App.Forms
             this.Close();
         }
 
-
     }
 }

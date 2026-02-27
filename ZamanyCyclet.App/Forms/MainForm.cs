@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZamanyCyclet.App.Pages;
 using ZamanyCyclet.Domain;
 using ZamanyCyclet.Infrastructure;
 
@@ -30,6 +25,16 @@ namespace ZamanyCyclet.App.Forms
             _operator = login.Operator;
 
             InitilizeUi();
+
+            menu_BtnShopManage.Click += (s,e)=> { ShowPage(new ShopManagerPage()); };
+        }
+
+        private void ShowPage(UserControl page)
+        {
+            panelView.Controls.Clear();
+
+            page.Dock = DockStyle.Fill; 
+            panelView.Controls.Add(page);
         }
         void InitilizeUi()
         {
@@ -47,7 +52,7 @@ namespace ZamanyCyclet.App.Forms
                 {
                     var menuItem = new ToolStripMenuItem(shop.Name);
                     //menuItem.AutoSize = false;
-                    menuItem.Image = Properties.Resources.motorbike_helmet;
+                    menuItem.Image = Properties.Resources.motorbike_helmet80x;
                     menuItem.Name = $"toolshop:{shop.Id}";
                     menuItem.Size = new System.Drawing.Size(80, 90);
                     menuItem.Text = shop.Name;

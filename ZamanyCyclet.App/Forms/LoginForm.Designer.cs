@@ -34,7 +34,6 @@
             this.PanelTabs = new System.Windows.Forms.FlowLayoutPanel();
             this.LabelTitle = new System.Windows.Forms.Label();
             this.LabelTittleDescription = new System.Windows.Forms.Label();
-            this.GroupBoxTime = new System.Windows.Forms.GroupBox();
             this.LabelDatetime = new System.Windows.Forms.Label();
             this.GroupBoxLogin = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,13 +41,11 @@
             this.CbUsers = new System.Windows.Forms.ComboBox();
             this.InputPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LabelCopyright = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
+            this.LabelCopyright = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBackground)).BeginInit();
             this.PanelMain.SuspendLayout();
             this.PanelTabs.SuspendLayout();
-            this.GroupBoxTime.SuspendLayout();
             this.GroupBoxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,11 +53,12 @@
             // 
             this.ImageBackground.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ImageBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImageBackground.Image = global::ZamanyCyclet.App.Properties.Resources.background;
+            this.ImageBackground.ErrorImage = null;
+            this.ImageBackground.Image = ((System.Drawing.Image)(resources.GetObject("ImageBackground.Image")));
             this.ImageBackground.Location = new System.Drawing.Point(0, 0);
             this.ImageBackground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ImageBackground.Name = "ImageBackground";
-            this.ImageBackground.Size = new System.Drawing.Size(733, 728);
+            this.ImageBackground.Size = new System.Drawing.Size(536, 728);
             this.ImageBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageBackground.TabIndex = 9;
             this.ImageBackground.TabStop = false;
@@ -68,8 +66,9 @@
             // PanelMain
             // 
             this.PanelMain.Controls.Add(this.PanelTabs);
+            this.PanelMain.Controls.Add(this.LabelCopyright);
             this.PanelMain.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelMain.Location = new System.Drawing.Point(733, 0);
+            this.PanelMain.Location = new System.Drawing.Point(536, 0);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Size = new System.Drawing.Size(319, 728);
@@ -77,20 +76,18 @@
             // 
             // PanelTabs
             // 
-            this.PanelTabs.BackColor = System.Drawing.Color.FloralWhite;
+            this.PanelTabs.BackColor = System.Drawing.SystemColors.Control;
             this.PanelTabs.Controls.Add(this.LabelTitle);
             this.PanelTabs.Controls.Add(this.LabelTittleDescription);
-            this.PanelTabs.Controls.Add(this.GroupBoxTime);
+            this.PanelTabs.Controls.Add(this.LabelDatetime);
             this.PanelTabs.Controls.Add(this.GroupBoxLogin);
-            this.PanelTabs.Controls.Add(this.groupBox1);
-            this.PanelTabs.Controls.Add(this.LabelCopyright);
             this.PanelTabs.Controls.Add(this.labelVersion);
-            this.PanelTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTabs.Location = new System.Drawing.Point(0, 0);
             this.PanelTabs.Name = "PanelTabs";
             this.PanelTabs.Padding = new System.Windows.Forms.Padding(8, 20, 8, 8);
             this.PanelTabs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PanelTabs.Size = new System.Drawing.Size(319, 728);
+            this.PanelTabs.Size = new System.Drawing.Size(319, 667);
             this.PanelTabs.TabIndex = 9;
             // 
             // LabelTitle
@@ -115,24 +112,11 @@
             this.LabelTittleDescription.TabIndex = 4;
             this.LabelTittleDescription.Text = "به نرم افزار حساب داری آراس‌سیکلت خوش آمدید !";
             // 
-            // GroupBoxTime
-            // 
-            this.GroupBoxTime.Controls.Add(this.LabelDatetime);
-            this.GroupBoxTime.Location = new System.Drawing.Point(9, 86);
-            this.GroupBoxTime.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
-            this.GroupBoxTime.Name = "GroupBoxTime";
-            this.GroupBoxTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.GroupBoxTime.Size = new System.Drawing.Size(291, 48);
-            this.GroupBoxTime.TabIndex = 8;
-            this.GroupBoxTime.TabStop = false;
-            this.GroupBoxTime.Text = "تاریخ";
-            // 
             // LabelDatetime
             // 
             this.LabelDatetime.AutoSize = true;
-            this.LabelDatetime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LabelDatetime.Location = new System.Drawing.Point(221, 19);
-            this.LabelDatetime.Margin = new System.Windows.Forms.Padding(0);
+            this.LabelDatetime.Location = new System.Drawing.Point(226, 76);
+            this.LabelDatetime.Margin = new System.Windows.Forms.Padding(10);
             this.LabelDatetime.Name = "LabelDatetime";
             this.LabelDatetime.Size = new System.Drawing.Size(67, 15);
             this.LabelDatetime.TabIndex = 6;
@@ -145,7 +129,7 @@
             this.GroupBoxLogin.Controls.Add(this.CbUsers);
             this.GroupBoxLogin.Controls.Add(this.InputPassword);
             this.GroupBoxLogin.Controls.Add(this.label1);
-            this.GroupBoxLogin.Location = new System.Drawing.Point(9, 142);
+            this.GroupBoxLogin.Location = new System.Drawing.Point(9, 106);
             this.GroupBoxLogin.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.GroupBoxLogin.Name = "GroupBoxLogin";
             this.GroupBoxLogin.Size = new System.Drawing.Size(291, 231);
@@ -204,33 +188,11 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "رمز عبور:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(9, 386);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(291, 203);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            // 
-            // LabelCopyright
-            // 
-            this.LabelCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelCopyright.AutoSize = true;
-            this.LabelCopyright.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelCopyright.Location = new System.Drawing.Point(59, 592);
-            this.LabelCopyright.Name = "LabelCopyright";
-            this.LabelCopyright.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelCopyright.Size = new System.Drawing.Size(241, 13);
-            this.LabelCopyright.TabIndex = 7;
-            this.LabelCopyright.Text = "طراحی و توسعه شرکت خدمات نرم افزاری Haluntm";
-            // 
             // labelVersion
             // 
             this.labelVersion.AutoSize = true;
             this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(251, 615);
+            this.labelVersion.Location = new System.Drawing.Point(251, 350);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(10);
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(42, 15);
@@ -238,11 +200,24 @@
             this.labelVersion.Text = "[نسخه]";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LabelCopyright
+            // 
+            this.LabelCopyright.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LabelCopyright.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCopyright.Location = new System.Drawing.Point(0, 693);
+            this.LabelCopyright.Name = "LabelCopyright";
+            this.LabelCopyright.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.LabelCopyright.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabelCopyright.Size = new System.Drawing.Size(319, 35);
+            this.LabelCopyright.TabIndex = 7;
+            this.LabelCopyright.Text = "طراحی و توسعه شرکت خدمات نرم افزاری Haluntm";
+            this.LabelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 728);
+            this.ClientSize = new System.Drawing.Size(855, 728);
             this.Controls.Add(this.ImageBackground);
             this.Controls.Add(this.PanelMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -257,8 +232,6 @@
             this.PanelMain.ResumeLayout(false);
             this.PanelTabs.ResumeLayout(false);
             this.PanelTabs.PerformLayout();
-            this.GroupBoxTime.ResumeLayout(false);
-            this.GroupBoxTime.PerformLayout();
             this.GroupBoxLogin.ResumeLayout(false);
             this.GroupBoxLogin.PerformLayout();
             this.ResumeLayout(false);
@@ -278,9 +251,7 @@
         private System.Windows.Forms.Label LabelDatetime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.GroupBox GroupBoxTime;
         private System.Windows.Forms.FlowLayoutPanel PanelTabs;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelVersion;
     }
 }
